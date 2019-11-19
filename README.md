@@ -23,3 +23,24 @@ for (i; i < ticets; i++) {
         }
     }
 ```
+## Задание 2.2.
+
+```js
+function validation (inputName, inputPassword, length) {
+    
+    var inputTag
+    var inputPass
+    do {
+       inputTag = prompt(`Введите ваш логин ${inputName}`)
+      
+    }
+    while  (typeof inputTag, inputPass === 'string' && inputTag.length < length)
+    do {
+         inputPass = prompt(`Введите пароль ${inputPassword}`)
+    } 
+    while  (typeof inputPass === 'string' && inputPass.length < length)
+
+    return console.log(inputTag)
+}
+
+```
