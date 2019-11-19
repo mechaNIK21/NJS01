@@ -40,7 +40,8 @@ function validation (inputName, inputPassword, length) {
     } 
     while  (typeof inputPass === 'string' && inputPass.length < length)
 
-    return console.log(inputTag)
+    return console.log(inputTag, inputPass)
 }
+
 
 ```
