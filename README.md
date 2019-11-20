@@ -35,13 +35,20 @@ function validation (inputName, inputPassword, length) {
       
     }
     while  (typeof inputTag, inputPass === 'string' && inputTag.length < length)
+    if (inputTag.length < 3){
+        console.log(`Incorrect`)
+    }
     do {
          inputPass = prompt(`Введите пароль ${inputPassword}`)
     } 
     while  (typeof inputPass === 'string' && inputPass.length < length)
+    if (inputPass.length < 6){
+        console.log(`Too easy password`)
+    }
 
     return console.log(inputTag, inputPass)
 }
 
-
+validation(name)
+validation(password)
 ```
